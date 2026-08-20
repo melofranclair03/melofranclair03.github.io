@@ -5,104 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Melofranclair - Site officiel</title>
+    <meta name="description"
+        content="ANDRIAMANDRESY Melo Franclair - Gestionnaire de Base de Données et prestataire de services.">
+
+    <title>ANDRIAMANDRESY Melo Franclair | Portfolio professionnel</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- MENU -->
+    <!-- ==================== MENU ==================== -->
 
-    <nav>
+    <nav class="navbar">
 
         <div class="logo">
-            MELOFRANCLAIR
+            MELO FRANCLAIR
         </div>
 
-        <ul>
+        <ul class="nav-links">
             <li><a href="#accueil">Accueil</a></li>
             <li><a href="#apropos">À propos</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
     </nav>
 
 
-    <!-- ACCUEIL -->
+    <!-- ==================== ACCUEIL ==================== -->
 
     <header class="hero" id="accueil">
 
-        <div>
+        <div class="hero-content">
 
-            <h1>Bienvenue sur mon site</h1>
-
-            <p>
-                Découvrez mes services et mes réalisations.
+            <p class="hero-small">
+                BIENVENUE SUR MON PORTFOLIO
             </p>
 
-            <a href="#contact" class="btn">
-                Me contacter
-            </a>
+            <h1>
+                ANDRIAMANDRESY<br>
+                <span>Melo Franclair</span>
+            </h1>
+
+            <h2>
+                Gestionnaire de Base de Données
+            </h2>
+
+            <p class="hero-description">
+                Je propose mes compétences et mes services professionnels
+                dans la gestion, la création et l'accompagnement de projets.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#services" class="btn btn-primary">
+                    Découvrir mes services
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                    Me contacter
+                </a>
+
+            </div>
 
         </div>
 
     </header>
 
 
-    <!-- À PROPOS -->
+    <!-- ==================== À PROPOS ==================== -->
 
-    <section id="apropos">
+    <section id="apropos" class="section">
 
-        <h2>À propos</h2>
+        <div class="container">
 
-        <p>
-            Bienvenue sur mon site web.
-            Cette plateforme présente mes activités,
-            mes services et mes projets.
-        </p>
+            <p class="section-subtitle">
+                À PROPOS DE MOI
+            </p>
 
-    </section>
+            <h2>
+                Qui suis-je ?
+            </h2>
 
+            <div class="about-content">
 
-    <!-- SERVICES -->
+                <div class="about-text">
 
-    <section id="services">
+                    <p>
+                        Je suis <strong>ANDRIAMANDRESY Melo Franclair</strong>,
+                        Gestionnaire de Base de Données.
+                    </p>
 
-        <h2>Mes services</h2>
+                    <p>
+                        Je m'intéresse particulièrement à la gestion,
+                        à l'organisation des données et à la réalisation
+                        de projets professionnels.
+                    </p>
 
-        <div class="services">
+                    <p>
+                        Je propose également mes services dans le domaine
+                        de la <strong>coupe et couture</strong> ainsi que
+                        dans l'activité de <strong>maître artisan</strong>.
+                    </p>
 
-            <div class="card">
-
-                <h3>Service 1</h3>
-
-                <p>
-                    Présentation de votre premier service.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Service 2</h3>
-
-                <p>
-                    Présentation de votre deuxième service.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Service 3</h3>
-
-                <p>
-                    Présentation de votre troisième service.
-                </p>
+                </div>
 
             </div>
 
@@ -111,37 +119,245 @@
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- ==================== SERVICES ==================== -->
 
-    <section class="contact" id="contact">
+    <section id="services" class="section services-section">
 
-        <h2>Contact</h2>
+        <div class="container">
 
-        <p>
-            Vous pouvez me contacter pour plus d'informations.
-        </p>
+            <p class="section-subtitle">
+                MES SERVICES
+            </p>
 
-        <br>
+            <h2>
+                Ce que je propose
+            </h2>
 
-        <p>
-            📧 Email :
-            <a href="mailto:contact@example.com">
-                contact@example.com
-            </a>
-        </p>
+            <div class="services-grid">
+
+                <!-- SERVICE 1 -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        Gestion
+                    </h3>
+
+                    <p>
+                        Organisation, gestion et suivi des activités
+                        et des informations professionnelles.
+                    </p>
+
+                    <a href="#contact">
+                        Demander un service →
+                    </a>
+
+                </div>
+
+
+                <!-- SERVICE 2 -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        ✂️
+                    </div>
+
+                    <h3>
+                        Coupe & Couture
+                    </h3>
+
+                    <p>
+                        Services de coupe et couture adaptés
+                        aux besoins et aux projets des clients.
+                    </p>
+
+                    <a href="#contact">
+                        Demander un service →
+                    </a>
+
+                </div>
+
+
+                <!-- SERVICE 3 -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        🛠️
+                    </div>
+
+                    <h3>
+                        Maître Artisan
+                    </h3>
+
+                    <p>
+                        Réalisation et accompagnement de travaux
+                        artisanaux avec sérieux et professionnalisme.
+                    </p>
+
+                    <a href="#contact">
+                        Demander un service →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- ==================== RÉALISATIONS ==================== -->
+
+    <section id="realisations" class="section">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                MES RÉALISATIONS
+            </p>
+
+            <h2>
+                Mes projets
+            </h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+
+                    <h3>
+                        Gestion de données
+                    </h3>
+
+                    <p>
+                        Organisation et gestion de données
+                        pour faciliter le suivi et le reporting.
+                    </p>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3>
+                        Projets professionnels
+                    </h3>
+
+                    <p>
+                        Mise en place de solutions adaptées
+                        aux besoins des utilisateurs.
+                    </p>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3>
+                        Coupe & Couture
+                    </h3>
+
+                    <p>
+                        Créations et travaux réalisés dans
+                        le domaine de la coupe et de la couture.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== CONTACT ==================== -->
+
+    <section id="contact" class="section contact-section">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                CONTACT
+            </p>
+
+            <h2>
+                Parlons de votre projet
+            </h2>
+
+            <p class="contact-intro">
+                Vous souhaitez obtenir un renseignement,
+                demander un service ou discuter d'un projet ?
+                Contactez-moi directement.
+            </p>
+
+
+            <div class="contact-buttons">
+
+                <!-- EMAIL -->
+
+                <a href="mailto:melofranclair03@gmail.com"
+                   class="contact-btn email-btn">
+
+                    📧
+                    <span>
+                        <strong>Email</strong>
+                        melofranclair03@gmail.com
+                    </span>
+
+                </a>
+
+
+                <!-- WHATSAPP -->
+
+                <a href="https://wa.me/261346374873"
+                   target="_blank"
+                   class="contact-btn whatsapp-btn">
+
+                    💬
+                    <span>
+                        <strong>WhatsApp</strong>
+                        +261 34 63 748 73
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
 
     <footer>
 
-        <p>
-            © 2026 MELOFRANCLAIR - Tous droits réservés
-        </p>
+        <div class="footer-content">
+
+            <h3>
+                MELO FRANCLAIR
+            </h3>
+
+            <p>
+                Gestionnaire de Base de Données
+            </p>
+
+            <p class="copyright">
+                © 2026 ANDRIAMANDRESY Melo Franclair.
+                Tous droits réservés.
+            </p>
+
+        </div>
 
     </footer>
+
 
 </body>
 
