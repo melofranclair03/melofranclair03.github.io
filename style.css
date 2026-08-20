@@ -442,11 +442,11 @@ footer {
    ===================================================== */
 
 @media (max-width: 650px) 
+{
 .hero-photo {
     width: 140px;
     height: 140px;
-}{
-
+}
     .navbar {
         flex-direction: column;
         gap: 15px;
