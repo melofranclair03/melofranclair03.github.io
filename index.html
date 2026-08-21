@@ -642,6 +642,54 @@
     <span class="whatsapp-text">WhatsApp</span>
 
 </a>
+    <script>
+
+document.getElementById("serviceForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const nom = document.getElementById("nom").value.trim();
+
+    const telephone = document.getElementById("telephone").value.trim();
+
+    const email = document.getElementById("email").value.trim();
+
+    const service = document.getElementById("service").value;
+
+    const message = document.getElementById("message").value.trim();
+
+
+    const texte =
+
+        "Bonjour Melo Franclair,%0A%0A" +
+
+        "Je souhaite demander un service.%0A%0A" +
+
+        "*Nom et prénom :* " + encodeURIComponent(nom) + "%0A" +
+
+        "*Téléphone :* " + encodeURIComponent(telephone) + "%0A" +
+
+        "*Email :* " + encodeURIComponent(email || "Non renseigné") + "%0A" +
+
+        "*Service demandé :* " + encodeURIComponent(service) + "%0A%0A" +
+
+        "*Description de la demande :*%0A" +
+
+        encodeURIComponent(message);
+
+
+    const whatsappURL =
+        "https://wa.me/261346374873?text=" + texte;
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+});
+
+</script>
 </body>
 
 </html>
