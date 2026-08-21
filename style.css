@@ -481,6 +481,9 @@ footer {
     .hero h1 {
         font-size: 45px;
     }
+   .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
 }
 
 /* =====================================================
@@ -546,4 +549,7 @@ footer {
         width: 100%;
         min-width: auto;
     }
+   .skills-grid {
+    grid-template-columns: 1fr;
+}
 }
