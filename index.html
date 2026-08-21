@@ -37,6 +37,7 @@
             <li><a href="#competences">Compétences</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#demande">Demander un service</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
@@ -363,26 +364,213 @@
 
     <!-- ==================== CONTACT ==================== -->
 
-    <section id="contact" class="section contact-section">
+   <!-- ==================== DEMANDER UN SERVICE ==================== -->
 
-        <div class="container">
+<section id="demande" class="section request-section">
 
-            <p class="section-subtitle">
-                CONTACT
-            </p>
+    <div class="container">
 
-            <h2>
-                Parlons de votre projet
-            </h2>
+        <p class="section-subtitle">
+            DEMANDER UN SERVICE
+        </p>
 
-            <p class="contact-intro">
-                Vous souhaitez obtenir un renseignement,
-                demander un service ou discuter d'un projet ?
-                Contactez-moi directement.
-            </p>
+        <h2>
+            Parlons de votre projet
+        </h2>
+
+        <p class="request-intro">
+            Remplissez le formulaire ci-dessous.
+            Votre demande sera préparée automatiquement
+            pour être envoyée par WhatsApp.
+        </p>
+
+        <form id="serviceForm" class="service-form">
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="nom">
+                        Nom et prénom *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nom"
+                        name="nom"
+                        placeholder="Votre nom et prénom"
+                        required
+                    >
+
+                </div>
 
 
-            <div class="contact-buttons">
+                <div class="form-group">
+
+                    <label for="telephone">
+                        Téléphone *
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telephone"
+                        name="telephone"
+                        placeholder="034 XX XXX XX"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Adresse e-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemple@gmail.com"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="service">
+                    Service demandé *
+                </label>
+
+                <select id="service" name="service" required>
+
+                    <option value="">
+                        -- Choisissez un service --
+                    </option>
+
+                    <option value="Gestion">
+                        Gestion
+                    </option>
+
+                    <option value="Gestion de base de données">
+                        Gestion de base de données
+                    </option>
+
+                    <option value="Excel et reporting">
+                        Excel & Reporting
+                    </option>
+
+                    <option value="Coupe et couture">
+                        Coupe & Couture
+                    </option>
+
+                    <option value="Maître artisan">
+                        Maître Artisan
+                    </option>
+
+                    <option value="Autre service">
+                        Autre service
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Décrivez votre demande *
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Décrivez votre projet ou votre besoin..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="form-submit"
+            >
+
+                💬 Envoyer la demande par WhatsApp
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ==================== CONTACT ==================== -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="container">
+
+        <p class="section-subtitle">
+            CONTACT
+        </p>
+
+        <h2>
+            Mes coordonnées
+        </h2>
+
+        <p class="contact-intro">
+            Vous pouvez également me contacter directement.
+        </p>
+
+
+        <div class="contact-buttons">
+
+            <a
+                href="mailto:melofranclair03@gmail.com"
+                class="contact-btn email-btn"
+            >
+
+                📧
+
+                <span>
+                    <strong>Email</strong>
+                    melofranclair03@gmail.com
+                </span>
+
+            </a>
+
+
+            <a
+                href="https://wa.me/261346374873"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-btn whatsapp-btn"
+            >
+
+                💬
+
+                <span>
+                    <strong>WhatsApp</strong>
+                    +261 34 63 748 73
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
                 <!-- EMAIL -->
 
