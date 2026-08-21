@@ -235,6 +235,52 @@ body {
 }
 
 /* =====================================================
+   COMPÉTENCES
+   ===================================================== */
+
+.skills-section {
+    background: #f8fafc;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.skill-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    color: #0f172a;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #64748b;
+}
+/* =====================================================
    SERVICES
    ===================================================== */
 
