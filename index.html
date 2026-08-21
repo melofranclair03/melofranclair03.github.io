@@ -162,9 +162,11 @@
                         et des informations professionnelles.
                     </p>
 
-                    <a href="#contact">
-                        Demander un service →
-                    </a>
+                   <a href="#demande"
+   class="service-request-btn"
+   data-service="Gestion">
+    Demander ce service →
+</a>
 
                 </div>
 
@@ -186,9 +188,11 @@
                         aux besoins et aux projets des clients.
                     </p>
 
-                    <a href="#contact">
-                        Demander un service →
-                    </a>
+                    <a href="#demande"
+   class="service-request-btn"
+   data-service="Coupe et couture">
+    Demander ce service →
+</a>
 
                 </div>
 
@@ -210,10 +214,11 @@
                         artisanaux avec sérieux et professionnalisme.
                     </p>
 
-                    <a href="#contact">
-                        Demander un service →
-                    </a>
-
+                   <a href="#demande"
+   class="service-request-btn"
+   data-service="Maître artisan">
+    Demander ce service →
+</a>
                 </div>
 
             </div>
@@ -686,6 +691,23 @@ document.getElementById("serviceForm").addEventListener("submit", function(event
         whatsappURL,
         "_blank"
     );
+
+});
+
+</script>
+    <script>
+
+document.querySelectorAll(".service-request-btn").forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        const service = this.getAttribute("data-service");
+
+        const select = document.getElementById("service");
+
+        select.value = service;
+
+    });
 
 });
 
