@@ -806,3 +806,96 @@ footer {
 
     text-decoration: none !important;
 }
+/* =====================================================
+   POURQUOI ME CHOISIR
+   ===================================================== */
+
+.why-section {
+    background: #ffffff;
+}
+
+.why-intro {
+    max-width: 700px;
+    margin: -20px auto 45px;
+    text-align: center;
+    color: #64748b;
+    font-size: 18px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    background: #f8fafc;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+.why-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #0284c7;
+    color: white;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.why-card h3 {
+    color: #0f172a;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.why-card p {
+    color: #64748b;
+}
+
+
+/* ===== TABLETTE ===== */
+
+@media (max-width: 900px) {
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ===== TELEPHONE ===== */
+
+@media (max-width: 650px) {
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-intro {
+        font-size: 16px;
+    }
+
+}
