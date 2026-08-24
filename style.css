@@ -3045,3 +3045,241 @@ nav a:hover,
     }
 
 }
+/* =====================================================
+   POURQUOI ME CHOISIR ?
+   ===================================================== */
+
+.why-section {
+    padding: 100px 25px;
+    background: #f8fafc;
+}
+
+.why-container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* ================= EN-TÊTE ================= */
+
+.why-header {
+    max-width: 750px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.why-header .section-label {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    color: #0284c7;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.why-header h2 {
+    margin: 0 0 18px;
+
+    color: #0f172a;
+
+    font-size: 44px;
+
+    line-height: 1.2;
+}
+
+.why-header p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= CARTES ================= */
+
+.why-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.why-card {
+    padding: 30px 22px;
+
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 35px rgba(15, 23, 42, 0.12);
+}
+
+
+/* ================= ICÔNES ================= */
+
+.why-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    background: #e0f2fe;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+
+    transition: 0.3s;
+}
+
+.why-card:hover .why-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+
+/* ================= TEXTE ================= */
+
+.why-card h3 {
+    margin: 0 0 12px;
+
+    color: #0f172a;
+
+    font-size: 20px;
+}
+
+.why-card p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= APPEL À L'ACTION ================= */
+
+.why-action {
+    max-width: 850px;
+
+    margin: 60px auto 0;
+
+    padding: 40px 30px;
+
+    background: #0f172a;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.why-action h3 {
+    margin: 0 0 10px;
+
+    font-size: 28px;
+}
+
+.why-action p {
+    margin: 0 0 25px;
+
+    color: #cbd5e1;
+
+    line-height: 1.7;
+}
+
+.why-button {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    background: #0284c7;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.why-button:hover {
+    background: #0369a1;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= TABLETTE ================= */
+
+@media (max-width: 950px) {
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .why-section {
+        padding: 70px 20px;
+    }
+
+    .why-header h2 {
+        font-size: 35px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-action {
+        padding: 30px 20px;
+    }
+
+    .why-action h3 {
+        font-size: 24px;
+    }
+
+    .why-button {
+        width: 100%;
+    }
+
+}
