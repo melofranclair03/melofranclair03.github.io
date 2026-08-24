@@ -1460,6 +1460,59 @@ document.querySelectorAll(".service-request-btn").forEach(function(button) {
 });
 
 </script>
+<script>
+
+const backToTop = document.getElementById("backToTop");
+
+
+window.addEventListener("scroll", function() {
+
+    if (window.scrollY > 400) {
+
+        backToTop.classList.add("show");
+
+    } else {
+
+        backToTop.classList.remove("show");
+
+    }
+
+});
+
+
+backToTop.addEventListener("click", function() {
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
+
+</script>
+    <!-- ==================== WHATSAPP FLOTTANT ==================== -->
+
+<a
+    href="https://wa.me/261346374873?text=Bonjour%20Melo%20Franclair%2C%20je%20souhaite%20avoir%20plus%20d'informations%20sur%20vos%20services."
+    class="whatsapp-floating"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contacter Melo Franclair sur WhatsApp"
+>
+    <span>💬</span>
+</a>
+    <!-- ==================== RETOUR EN HAUT ==================== -->
+
+<button
+    id="backToTop"
+    class="back-to-top"
+    aria-label="Retour en haut"
+>
+    ↑
+</button>
 </body>
 
 </html>
