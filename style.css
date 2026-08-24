@@ -209,7 +209,7 @@ body {
 
 .hero-contact {
     display: flex;
-
+    align-items: center;
     gap: 25px;
 
     margin-top: 25px;
@@ -218,17 +218,21 @@ body {
 }
 
 .hero-contact a {
+    display: inline-flex;
+    align-items: center;
+
     color: #475569;
 
     text-decoration: none;
 
     font-weight: 600;
+
+    transition: 0.3s;
 }
 
 .hero-contact a:hover {
     color: #0284c7;
 }
-
 
 /* PHOTO */
 
@@ -2317,4 +2321,56 @@ footer {
 
 .back-to-top:hover {
     background: #0284c7;
+}
+/* =====================================================
+   CORRECTION MENU / NAVIGATION
+   ===================================================== */
+
+nav,
+.navbar {
+    background: #0f172a !important;
+    color: white !important;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+nav a,
+.navbar a {
+    color: white !important;
+    text-decoration: none;
+}
+
+nav a:hover,
+.navbar a:hover {
+    color: #38bdf8 !important;
+}
+
+.logo {
+    color: white !important;
+    font-weight: 800;
+}
+/* =====================================================
+   AMELIORATION PHOTO HERO
+   ===================================================== */
+
+.hero-photo-circle {
+    width: 410px;
+    height: 410px;
+
+    padding: 8px;
+
+    box-shadow:
+        0 20px 50px rgba(2, 132, 199, 0.20);
+}
+
+.hero-photo-decoration {
+    width: 440px;
+    height: 440px;
+}
+.hero-container {
+    min-height: 650px;
+}
+
+.hero-content {
+    padding-left: 20px;
 }
