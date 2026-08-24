@@ -1724,3 +1724,50 @@ footer {
 .whatsapp-floating span {
     line-height: 1;
 }
+/* =====================================================
+   RETOUR EN HAUT
+   ===================================================== */
+
+.back-to-top {
+    position: fixed;
+
+    right: 22px;
+    bottom: 92px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #0f172a;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    z-index: 998;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(15px);
+
+    transition: .3s;
+}
+
+.back-to-top.show {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: #0284c7;
+}
